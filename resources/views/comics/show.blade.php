@@ -1,10 +1,10 @@
 <div>
     <h1>Rotta show</h1>
-    <p>{{$comics->title}}</p>
-    <p>{{$comics->description}}</p>
+    <p>{{$comic->title}}</p>
+    <p>{{$comic->description}}</p>
     <img src="{{$comic->thumb}}" alt="">
-    <p>{{$comics->price}}</p>
-    <p>{{$comics->series}}</p>
-    <p>{{$comics->sale_date}}</p>
-    <p>{{$comics->type}}</p>
+    <p>{{$comic->price}}</p>
+    <p>{{$comic->series}}</p>
+    <p>{{$comic->sale_date}}</p>
+    <p>{{$comic->type}}</p>
 </div>
