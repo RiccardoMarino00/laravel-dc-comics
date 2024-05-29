@@ -1,12 +1,10 @@
 <div>
     <h1>Rotta show</h1>
-    @foreach ($comics as $comic)
-    <p>{{$comic->title}}</p>
-    <p>{{$comic->description}}</p>
+    <p>{{$comics->title}}</p>
+    <p>{{$comics->description}}</p>
     <img src="{{$comic->thumb}}" alt="">
-    <p>{{$comic->price}}</p>
-    <p>{{$comic->series}}</p>
-    <p>{{$comic->sale_date}}</p>
-    <p>{{$comic->type}}</p>
-    @endforeach
+    <p>{{$comics->price}}</p>
+    <p>{{$comics->series}}</p>
+    <p>{{$comics->sale_date}}</p>
+    <p>{{$comics->type}}</p>
 </div>
