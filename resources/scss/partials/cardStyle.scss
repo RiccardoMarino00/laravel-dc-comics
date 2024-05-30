@@ -1,0 +1,55 @@
+.comics-col{
+    color: whitesmoke;
+    position: relative;
+    margin-top: 58px;
+
+
+
+}
+
+.thumb-comic{
+    width: 400px;
+    height: 540px;
+    border-radius: 10px;
+}
+
+.thumb-comic:hover + .info{
+    opacity: 1;
+    transition: opacity 1s;
+
+}
+
+.info:hover{
+    opacity: 1;
+
+}
+
+.thumb-comic:hover{
+    box-shadow: 5px 5px 5px rgb(59, 56, 56);
+    transition: box-shadow 1s;
+}
+
+.comics-riga{
+    text-align: center;
+
+}
+
+.comics-contenitore{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.info{
+    width: 320px;
+    height: 400px;
+    position: absolute;
+    bottom: -5%;
+    left: 4%;
+    background-color:rgba(255, 255, 255, 0.83);
+    color: black;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    overflow-y: scroll;
+}

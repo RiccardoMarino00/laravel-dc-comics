@@ -25,8 +25,10 @@ class ComicController extends Controller
         return view('comics.create');
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        return 'Rotta store';
+        $form_data = $request->all();
+        $new_comic = Comic::create($form_data);
+        return to_route('comics.show', $new_comic);
     }
 }
